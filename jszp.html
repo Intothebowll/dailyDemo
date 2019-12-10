@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>教师招聘 - 湖南智浪教育咨询有限公司</title>
+    <link rel="stylesheet" href="css/jszp.css">
+
+    <script src="lib/jquery-3.1.1.min.js"></script>
+    <script>
+        $(function () {
+            $('.a').mouseenter(function() {
+                $('.aa').css('display', 'block')
+            })
+            $('div,li').mouseleave(function() {
+                $('.aa').css('display', 'none')
+            })
+        })
+        $(function () {
+            $('.b').mouseenter(function() {
+                $('.bb').css('display', 'block')
+            })
+            $('.dd,div,li').mouseleave(function() {
+                $('.bb').css('display', 'none')
+            })
+        })
+
+    </script>
+    <script src="./js/lunbo.js"></script>
+    <script>
+
+
+        window.addEventListener("scroll", function() {
+            var btop = document.body.scrollTop || document.documentElement.scrollTop;
+
+            if(btop > 150) {
+                $(".top_main").addClass("fixed")
+            }  else {
+                //移除fixed
+                $(".top_main").removeClass("fixed")
+            }
+        });
+
+        window.onscroll=function () {
+            scrollFuction()
+        };
+        function  scrollFuction() {
+            if (document.body.scrollTop > 100|| document.documentElement.scrollTop > 100) {
+                document.getElementById("btnTop").style.display = "block";
+            } else {
+                document.getElementById("btnTop").style.display = "none";
+            }
+        }
+        function returnTop() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+    </script>
+
+</head>
+<body>
+
+<div class="head_main">
+    <div class="w1200">
+        <div class="left">欢迎访问湖南智浪教育, 以学员为中心，专注高通过率</div>
+        <div class="right">
+            <ul>
+                <li><a href=""><i class="icon i1"></i>今日直播</a></li>
+                <li><a href=""><i class="icon i2"></i>考试题库</a></li>
+                <li><a href=""><i class="icon i3"></i>网络课程</a></li>
+                <li><a href=""><i class="icon i4"></i>微信公众号</a></li>
+                <li><a href=""><i class="icon i5"></i>智浪VR全景</a></li>
+                <li class="bn"><a href=""><i class="icon i6"></i>0731—89829186</a></li>
+                <li><a href="">登录</a></li>
+                <li class="bn"><a href="">注册</a></li>
+            </ul>
+        </div>
+
+    </div>
+
+</div>
+<div class="top_main">
+    <div class="w1200">
+        <div class="left logo"><img src="images/logo.jpg"></div>
+        <div class="right">
+            <ul>
+                <li><a href="">主页</a></li>
+                <li><a href="">首页</a></li>
+                <li><a href="" class="a">最新招聘</a>
+                    <dl class="aa" style="display: none">
+                        <dd><a href="">北京市</a></dd>
+                        <dd><a href="">广州市</a></dd>
+                        <dd><a href="">上海市</a></dd>
+                        <dd><a href="">深圳市</a></dd>
+
+                    </dl>
+                </li>
+                <li><a href="" class="b">特岗教师</a>
+                    <dl class="bb" style="display: none">
+                        <dd><a href="">最新公告</a></dd>
+                        <dd><a href="">试题中心</a></dd>
+                    </dl>
+                </li>
+                <li><a href="">开课通知</a></li>
+                <li><a href="">面试专区</a></li>
+                <li><a href="">考试题库</a></li>
+                <li><a href="">学员专区</a></li>
+                <li><a href="">网络课程</a></li>
+                <li><a href="">师姐编程路</a></li>
+
+            </ul>
+        </div>
+    </div>
+</div>
+<div class="zl_1">
+    <div class="w1200"></div>
+</div>
+<div class="lunbo">
+    <div class="lunbo_img">
+        <img src="./images/lunbo_1.jpg" style="display: block;" alt="">
+        <img src="./images/lunbo_2.jpg" alt="">
+        <img src="./images/lunbo_3.jpg" alt="">
+
+        <div class="pre_next">
+            <i></i>
+            <i></i>
+        </div>
+        <div class="circle">
+            <ul>
+                <li class="circle_li2"></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </div>
+
+    </div>
+
+</div>
+<div class="zl_2">
+    <div class="w1200">
+        <div class="left">
+            <b>今日头条：</b>
+            <div class="scroll_top"> </div>
+        </div>
+        <div class="right">
+            <div class="search">
+                <input type="text" class="txt" placeholder="请输入关键字">
+                <input type="button" class="btn icon" >
+            </div>
+        </div>
+    </div>
+</div>
+<div class="zl_3 w1200">
+    <ul>
+        <li class="l1">
+            <a href="">
+                <img src="images/1.png">
+                <h3>今日直播</h3>
+                <span>更多>></span></a>
+        </li>
+        <li class="l2">
+            <a href="">
+                <img src="images/2.png" alt="">
+                <h3>在线题库</h3>
+                <span>更多>></span></a>
+        </li>
+        <li class="l3">
+            <a href="">
+                <img src="images/3.png" alt="">
+                <h3>图书商城</h3>
+                <span>更多>></span></a>
+        </li>
+        <li class="l4">
+            <a href="">
+                <img src="images/4.png" alt="">
+                <h3>历年真题</h3>
+                <span>更多>></span></a>
+        </li>
+        <li class="l5">
+            <a href="">
+                <img src="images/5.png" alt="">
+                <h3>每日一练</h3>
+                <span>更多>></span></a></li>
+        <li class="l6">
+            <a href="">
+                <img src="images/6.png" alt="">
+                <h3>代课信息</h3>
+                <span>更多>></span></a></li>
+        </li>
+    </ul>
+</div>
+<div class="zl_4">
+    <div class="w1200 clearfix" >
+
+        <div class="left box1">
+
+            <div class="box ">
+
+                <div class="tit clearfix">
+            <span class="left">
+                <i class="icon"></i>最新招聘
+            </span>
+                    <span class="right"><a href="">更多>></a></span>
+                </div>
+                <div class="body">
+                    <div class="new_top clearfix">
+                        <a href=""><span class="fl"><img src="images/hand.jpg"></span></a>
+                        <a href=""><span class="fr">
+                            <h3>2018湖南衡阳常宁市教育局定向招考后勤..</h3>
+                            <p>2018湖南衡阳常宁市教育局定向招考后勤保障人员20人公告</p>
+                        </span>
+                        </a>
+
+                    </div>
+                    <ul>
+                        <li class="clearfix">
+                            <a href="" >
+                                <span class="fl" style="padding-left: 0px; border-left-width: 0px;">2019株洲天元区招聘中小学教师及财务笔试面试入围名单公..</span>
+                                <span class="fr" style="padding-right: 0px; border-right-width: 0px;">2019-04-09</span>
+                            </a>
+                        </li>
+                        <li class="clearfix">
+                            <a href="">
+                                <span class="fl" style="padding-left: 0px; border-left-width: 0px;">2019年慈利县教育系统公开引进急需紧缺专业人才公告</span>
+                                <span class="fr" style="padding-right: 0px; border-right-width: 0px;">2019-04-05</span>
+                            </a>
+                        </li>
+                        <li class="clearfix">
+                            <a href="">
+                                <span class="fl" style="padding-left: 0px; border-left-width: 0px;">麻阳苗族自治县2019年公开招聘高中教师公告 </span>
+                                <span class="fr" style="padding-right: 0px; border-right-width: 0px;">2019-04-05</span>
+                            </a>
+                        </li>
+                        <li class="clearfix">
+                            <a href="">
+                                <span class="fl" style="padding-left: 0px; border-left-width: 0px;">武冈市2019年面向外县市公开商调教师公告</span>
+                                <span class="fr" style="padding-right: 0px; border-right-width: 0px;">2019-04-05</span>
+                            </a>
+                        </li>
+                        <li class="clearfix">
+                            <a href="">
+                                <span class="fl" style="padding-left: 0px; border-left-width: 0px;">2019年益阳市南县公开招聘教师公告</span>
+                                <span class="fr" style="padding-right: 0px; border-right-width: 0px;">2019-04-04</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+
+
+            </div>
+        </div>
+        <div class="right box2">
+            <div class="box">
+                <div class="tit clearfix">
+                    <span class="left">
+                        <i class="icon"></i>开课通知
+                    </span>
+                    <span class="right"><a href="">更多>></a></span>
+                </div>
+                <div class="body">
+                    <div class="new_top"style="margin-bottom: 35px">
+                        <a href=""><img src="images/handright.jpg"></a>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="zl_5main " >
+    <div class="tit2">
+        <div class="line"></div>
+        <div class="w1200 clearfix">
+            <div class="fl">
+                <h3>特岗教师</h3>
+                <p>湖南省教师考试服务挂牌上市企业（挂牌代码：302477HN）</p>
+            </div></div>
+    </div>
+    <div class="bd2">
+        <div class="body w1200 "style="display: block">
+            <div class="box1 left">
+                <a href="" class="imag"><img src="images/zl_5bodyleft.jpg"></a>
+                <a href="">
+                    <h3>2018湖南省特岗教师招聘体检名单公告（第二批）..</h3>
+                    <p>2018年湖南省特岗教师招聘第一次网上征集志愿工作已经结束，根据《2018年湖南省农村义务教育阶段学校特设岗位计划教师招聘公告》(湘教办通〔2018〕45号)和《关于组织开展2018年湖南省特岗教师招..</p>
+                    <span class="span">
+                        <span class="left">
+                            <i class="icon"></i>2019-12-01
+                            <i class="icon i2"></i>890
+                        </span>
+                        <span class="right">详细+</span>
+                    </span>
+                </a>
+            </div>
+            <div class="box2 right">
+                <div class="slideTxtBox ">
+                    <div class="hd">
+                        <ul class="clearfix">
+                            <li class="on"><a href="">
+                                <span class="left"><b>•</b>2018年湖南特岗教师第一批体检对象名..</span>
+                                <span class="right">07-25</span>
+                            </a></li>
+                            <li><a href="">
+                                <span class="left"><b>•</b>2018年湖南省特岗教师面试准考证打印..</span>
+                                <span class="right">09-22</span></a></li>
+                            <li><a href="">
+                                <span class="left"><b>•</b>关于公布2018年湖南省农村义务教育阶..</span>
+                                <span class="right">09-22</span></a></li>
+                            </a></li>
+                            <li>
+                                <a href="">
+                                    <span class="left"><b>•</b>2018年湖南省农村义务教育阶段学校特..</span>
+                                    <span class="right">09-22</span></a></li>
+                            </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="pic" >
+                        <img src="images/hand.jpg"style="width: 172px;height: 125px">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+<div class="footer">
+    <div class="footer_top center">
+        <a href="javascript:;" style="cursor: default">友情链接：</a>
+        <a href="javascript:;">长沙市教育局</a>
+        <a href="javascript:;">长沙市教育局</a>
+        <a href="javascript:;">长沙市教育局</a>
+        <a href="javascript:;">长沙市教育局</a>
+        <a href="javascript:;">长沙市教育局</a>
+        <a href="javascript:;">长沙市教育局</a>
+        <a href="javascript:;">长沙市教育局</a>
+        <a href="javascript:;">长沙市教育局</a>
+        <a href="javascript:;">长沙市教育局</a>
+        <a href="javascript:;">长沙市教育局</a>
+    </div>
+    <div class="footer_content center">
+        <div class="last_content">
+            <ul>
+                <li>
+                    <div class="out_of_erweima">
+                        <img src="./images/erweima.jpg" alt="">
+                        <span>微信公众号</span>
+                    </div>
+                    <div class="out_of_erweima">
+                        <img src="./images/erweima.jpg" alt="">
+                        <span>微信客服</span>
+                    </div>
+                    <p>地铁路线：乘地铁1号线、2号线在五一广场下车1号出口出来即到。</p>
+                    <p>公交路线：乘市内公交到太平街口站或五一广场站下车往东走50米即到。</p>
+                </li>
+                <li>
+                    <p>长沙总部</p>
+                    <p>热线：0731-89829186\84720600\85185776</p>
+                    <p>手机：17773181970(杨老师)  15274894615(蔡老师)</p>
+                    <p>地址：湖南省长沙市五一广场嘉顿新天地商务楼21楼</p>
+                    <p>邮箱：</p>
+                    <p>Q Q：211754770</p>
+                    <p>网址：http://www.zhilangedu.com</p>
+                </li>
+                <li>
+                    <p>湘潭分校</p>
+                    <p>热线：18890073184(陈老师)</p>
+                    <p>报名地址：湘潭市湖南科技大学南校区俱乐部对面招待所三</p>
+                    <p>楼智浪教师</p>
+                    <br>
+                    <p>浏阳教学点</p>
+                    <p>热线：19918991015(毛老师)  17307410392(许老师)</p>
+                    <p>地址：浏阳集里龚家桥社区仿古步行街118号智浪教育•益浏</p>
+                    <p>教学点</p>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="footer_bottom">
+        <div class=" center">
+            Copyrights © 2018湖南智浪教育咨询有限公司   备案号：湘ICP备19000757号-1   营业执照查阅   技术支持：竞网智赢  网站地图   站长统计
+        </div>
+    </div>
+</div>
+
+
+<div>
+    <button onclick="returnTop()" id="btnTop">返回顶部</button>
+</div>
+
+
+</body>
+</html>

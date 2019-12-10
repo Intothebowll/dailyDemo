@@ -1,0 +1,339 @@
+body {
+    padding: 0;
+    margin: 0;
+    font-size: 14px;
+    color: #333;
+    font-size: 12px;
+}
+.w1200 {
+    width: 1200px;
+    margin: 0 auto;
+}
+.left {
+    float: left;
+}
+.right {
+    float: right;
+    color: #fff;
+}
+.head_main {
+    background: #554f4f;
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+}
+.left {
+    height: 40px;
+    line-height: 40px;
+    color: #fff;
+}
+.head_main b {
+    font-size: 20px;
+    font-weight: normal;
+}
+.head_main li {
+    float: left;
+    padding: 0 10px;
+}
+.head_main span {
+    float: left;
+    padding: 0 3px;
+}
+.head_main li a {
+    font-size: 14px;
+    line-height: 17px;
+    color: #fff;
+}
+.head_main li a i {
+    width: 14px;
+    height: 17px;
+    background-position: 0 0;
+    vertical-align: text-bottom;
+    margin-right: 10px;
+}
+.icon {
+    background: url("../images/icon3.png") no-repeat;
+    display: inline-block;
+}
+.icon.i1 {
+    background-position: 0 0;
+}
+.icon.i2 {
+    background-position: -18px 0;
+}
+.nav_main .logo_left a {
+    float: left;
+}
+.logo_left {
+    float: left;
+    padding-top: 19px;
+}
+.txt {
+    float: left;
+    padding-left: 20px;
+    margin-left: 20px;
+    border-left: 1px solid #ccc;
+    height: 65px;
+}
+.txt h3{
+    font-size: 28px;
+    line-height: 28px;
+    font-weight: 100;
+    color: #000;
+}
+.txt h4{
+    color: #ff6b6b;
+    font-size: 28px;
+    font-weight: bold;
+    line-height: 37px;
+}
+.logo_right {
+    float: right;
+}
+.logo_right li {
+    float: left;
+    line-height: 100px;
+    text-align: center;
+    width: 111px;
+}
+.logo_right li a:hover {
+    color: #fff;
+    background: url("../images/go_hover.png") center center no-repeat;
+}
+.logo_right li .a1 {
+    color: #ffffff;
+    background: url("../images/go_hover.png") center center no-repeat;
+}
+.logo_right li a {
+    font-size: 16px;
+    color: #000;
+    display: block;
+}
+.banner_main {
+    width: 100%;
+    height: 491px;
+    background: url("../images/bg4.jpg") no-repeat;
+}
+.ban {
+    overflow: hidden;
+}
+.ban_title {
+    width: 100%;
+    height: 146px;
+    line-height: 146px;
+}
+.ban_title h3 {
+    text-align: center;
+    font-size: 36px;
+    font-weight: 100;
+    color: #000;
+}
+.ban li {
+    width: 188px;
+    text-align: center;
+    float: left;
+    margin-right: 65px;
+    color: #000;
+}
+.ban li:hover {
+    color: #ffbd43;
+}
+.ban li:nth-child(5) {
+    margin: 0;
+}
+.ban li .img {
+    height: 155px;
+    background: url("../images/bg5.png") center bottom no-repeat;
+}
+.ban li h3 {
+    font-size: 20px;
+    padding-top: 29px;
+    padding-bottom: 14px;
+    font-weight: bold;
+}
+.ban li p {
+    font-size: 14px;
+    line-height: 24px;
+}
+.floor {
+    width: 100%;
+}
+.floor_title {
+    height: 170px;
+    text-align: center;
+}
+.floor_title h3 {
+    font-size: 36px;
+    font-weight: 100;
+    color: #000;
+    padding-top: 55px;
+}
+.floor_title p {
+    font-size: 18px;
+    color: #999;
+    padding-top: 10px;
+    padding-bottom: 36px;
+}
+.flo ul {
+    width: 120%;
+}
+.flo ul li {
+    float: left;
+    width: 535px;
+    margin-right: 142px;
+    margin-bottom: 48px;
+}
+.flo_left {
+    float: left;
+}
+.fol_right {
+    float: right;
+    width: 391px;
+}
+.fol_right h3 {
+    font-size: 18px;
+    font-weight: 100;
+    line-height: 26px;
+    padding-top: 35px;
+}
+.more a{
+    border: 2px solid #ff6b6b;
+    color: #ff6b6b;
+    width: 496px;
+    height: 46px;
+    line-height: 46px;
+    border-radius: 5px;
+    font-size: 18px;
+    display: block;
+    text-align: center;
+    margin: 0 auto 30px;
+}
+.more a:last-child {
+    border: 2px solid #ffa34e;
+    color: #ffa34e;
+}
+.lunbo {
+    position: relative;
+    width: 1300px;;
+    height: auto;
+    margin: 0 auto;
+}
+.lunbo .lunbo_img{
+    width: 100%;
+    height: 475px;
+    overflow: hidden;
+    margin: 0 auto;
+    position: relative;
+}
+.lunbo .lunbo_img img{
+    width: 1300px;;
+    height: auto;
+    top:0;
+    left:0;
+    position: absolute;
+    z-index: 1;
+    display: none;
+}
+.lunbo .lunbo_img .circle{
+    width: 80px;
+    height: 16px;
+    position: absolute;
+    background-color: rgba(0, 0, 0, .2);
+    bottom:20px;
+    left: 650px;
+    margin-left: -40px;
+    border-radius: 6px;
+    z-index: 2;
+}
+.lunbo .circle ul {
+    width:100%;
+    height: 16px;
+    line-height:16px;
+    text-align: center;
+}
+.lunbo .circle ul li{
+    display: inline-block;
+    width: 10px;
+    height:10px;
+    background-color: #fff;
+    line-height:16px;
+    border-radius: 50%;
+    margin:0 5px;
+    box-sizing: border-box;
+}
+.lunbo .circle ul li:hover{
+    background-color: rgba(0, 0, 0, 0);
+    border:1.5px solid #fff;
+    cursor: pointer;
+    line-height:20px;
+}
+.circle_li2{
+    background-color: rgba(0, 0, 0, 0) !important;
+    border:1.5px solid #fff !important;
+    cursor: pointer !important;
+    line-height:20px !important;
+}
+
+
+.footer {
+    height: 290px;
+    text-align: center;
+}
+.footer .center{
+    width: 1200px;
+    margin: 0 auto;
+}
+.footer .footer_content{
+    height:210px;
+    background: url("../images/footer_bg.jpg");
+}
+.footer .footer_top{
+    width: 100%;
+    height:50px;
+    background-color: #605F5F;
+    line-height: 50px;
+}
+.footer .footer_top a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 8px;
+    margin: 0 12px;
+}
+.footer .footer_bottom {
+    width: 100%;
+    height:30px;
+    background-color: #000;
+    line-height: 30px;
+    font-size: 8px;
+    color: #666;
+}
+.footer .last_content {
+    width: 930px;
+    height:100%;
+    margin: 0 auto;
+}
+.footer .last_content ul>li {
+    width: 240px;
+    height:100%;
+    display: inline-block;
+    margin: 25px 20px;
+    vertical-align: top;
+    font-size: 8px;
+    color: #fff;
+}
+.footer .last_content ul>li span{
+    display: block;
+}
+.footer .last_content ul>li img{
+    display: inline-block;
+    width: 80px;
+    height: 80px;
+}
+
+.footer .last_content ul>li p{
+    text-align: left;
+}
+.footer .last_content ul>li .out_of_erweima{
+    display: inline-block;
+    margin: 0 15px;
+}

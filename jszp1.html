@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="css/jszp.css">
+    <script src="lib/jquery-3.1.1.min.js"></script>
+    <script>
+        $(function () {
+            $('.a').mouseenter(function() {
+                $('.aa').css('display', 'block')
+            })
+            $('div,li').mouseleave(function() {
+                $('.aa').css('display', 'none')
+            })
+        })
+        $(function () {
+            $('.b').mouseenter(function() {
+                $('.bb').css('display', 'block')
+            })
+            $('.dd,div,li').mouseleave(function() {
+                $('.bb').css('display', 'none')
+            })
+        })
+    </script>
+    <script>
+
+        window.addEventListener("scroll", function() {
+            var btop = document.body.scrollTop || document.documentElement.scrollTop;
+
+            if(btop > 150) {
+                $(".top_main").addClass("fixed")
+                $(".zl_1").addClass("fixed1")
+            }  else {
+                //移除fixed
+                $(".top_main").removeClass("fixed")
+                $(".zl_1").removeClass("fixed1")
+            }
+        });
+
+        window.onscroll=function () {
+            scrollFuction()
+        };
+
+        function  scrollFuction() {
+            if (document.body.scrollTop > 100|| document.documentElement.scrollTop > 100) {
+                document.getElementById("btnTop").style.display = "block";
+            } else {
+                document.getElementById("btnTop").style.display = "none";
+            }
+        }
+        function returnTop() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+    </script>
+
+</head>
+<body>
+
+<div class="head_main">
+    <div class="w1200">
+        <div class="left">欢迎访问湖南智浪教育, 以学员为中心，专注高通过率</div>
+        <div class="right">
+            <ul>
+                <li><a href=""><i class="icon i1"></i>今日直播</a></li>
+                <li><a href=""><i class="icon i2"></i>考试题库</a></li>
+                <li><a href=""><i class="icon i3"></i>网络课程</a></li>
+                <li><a href=""><i class="icon i4"></i>微信公众号</a></li>
+                <li><a href=""><i class="icon i5"></i>智浪VR全景</a></li>
+                <li class="bn"><a href=""><i class="icon i6"></i>0731—89829186</a></li>
+                <li><a href="">登录</a></li>
+                <li class="bn"><a href="">注册</a></li>
+            </ul>
+        </div>
+
+    </div>
+
+</div>
+<div class="top_main">
+    <div class="w1200">
+        <div class="left logo"><img src="images/logo.jpg"></div>
+        <div class="right">
+            <ul>
+                <li><a href="">主页</a></li>
+                <li><a href="">首页</a></li>
+                <li><a href="" class="a">最新招聘</a>
+                    <dl class="aa" style="display: none">
+                        <dd><a href="">北京市</a></dd>
+                        <dd><a href="">广州市</a></dd>
+                        <dd><a href="">上海市</a></dd>
+                        <dd><a href="">深圳市</a></dd>
+
+                    </dl>
+                </li>
+                <li><a href="" class="b">特岗教师</a>
+                    <dl class="bb" style="display: none">
+                        <dd><a href="">最新公告</a></dd>
+                        <dd><a href="">试题中心</a></dd>
+                    </dl>
+                </li>
+                <li><a href="">开课通知</a></li>
+                <li><a href="">面试专区</a></li>
+                <li><a href="">考试题库</a></li>
+                <li><a href="">学员专区</a></li>
+                <li><a href="">网络课程</a></li>
+                <li><a href="">师姐编程路</a></li>
+
+            </ul>
+        </div>
+    </div>
+</div>
+<div class="zl_1">
+    <div class="w1200"></div>
+</div>
+<div class="box4" id="box">
+    <div class="small">
+        <img src="images/big1.png" alt="picture"/>
+        <div class="mask"></div>
+    </div>
+    <div class="big">
+        <img src="images/big1%20-%20副本.png" alt="picture"/>
+    </div>
+</div>
+
+
+<div class="zl_8">
+    <div class="w1200 clearfix">
+        <div class="box1 fl">
+            <div class="box">
+                <div class="tit clearfix">
+                    <span class="fl">最新考试信息</span>
+                    <span class="fr"><a href="">更多>></a></span>
+                </div>
+                <div class="body">
+                    <dl>
+                        <dd><a href="" >
+                            <h3>湖南省2019年上半年中小学教师资格 考试（面试）..</h3>
+                            <p>2019-04-09</p>
+                        </a></dd>
+                        <dd><a href="" >
+                            <h3>湖南省2019年上半年中小学教师资格 考试（面试）..</h3>
+                            <p>2019-04-09</p>
+                        </a></dd>
+                        <dd><a href="" >
+                            <h3>湖南省2019年上半年中小学教师资格 考试（面试）..</h3>
+                            <p>2019-04-09</p>
+                        </a></dd>
+                        <dd><a href="" >
+                            <h3>湖南省2019年上半年中小学教师资格 考试（面试）..</h3>
+                            <p>2019-04-09</p>
+                        </a></dd>
+                    </dl>
+                </div>
+            </div>
+        </div>
+        <div class="box2 fl">
+            <div class="box">
+                <div class="tit clearfix">
+                    <span class="fl">
+                        <i class="icon"></i>开课通知
+                    </span>
+                    <span class="right"><a href="">更多>></a></span>
+                </div>
+                <div class="body">
+                    <div class="new_top"style="margin-bottom: 35px">
+                        <a href=""><img src="images/handright.jpg"style="margin-left: 10px"></a>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="box3 fr">
+            <div class="box">
+                <div class="tit clearfix">
+                    <span class="fl"><i class="icon"></i>考试日程表</span>
+                    <!--  <span class="fr"><a href="/ksrcb.html">更多>></a></span>-->
+                </div>
+                <div class="body body_ks">
+                    <table style="width:100%;" cellpadding="0" cellspacing="0" >
+                        <tbody>
+                        <tr>
+                            <td>
+                                <strong><span style="color:#337FE5;">国考笔试</span></strong>
+                            </td>
+                            <td>
+                                <br>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                报名时间：<br>
+                            </td>
+                            <td>
+                                9月4日-9月9日<br>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                报名入口：<br>
+                            </td>
+                            <td>
+                                <a href="http://ntce.neea.edu.cn" target="_blank">点击报名</a><br>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                准考证打印：<span id="__kindeditor_bookmark_start_0__"></span><br>
+                            </td>
+                            <td>
+                                10月29日起<span id="__kindeditor_bookmark_end_1__"></span><br>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                笔试时间：<br>
+                            </td>
+                            <td>
+                                2018年11月3日<br>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                成绩查询：<br>
+                            </td>
+                            <td>
+                                考后一个月<br>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <strong><span style="color:#337FE5;">国考面试</span></strong>
+                            </td>
+                            <td>
+                                <br>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <span>报名时间：</span><span></span><br>
+                            </td>
+                            <td>
+                                12月中旬<br>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                报名入口：<br>
+                            </td>
+                            <td>
+                                <a href="http://ntce.neea.edu.cn" target="_blank">点击报名</a><br>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                准考证打印：<br>
+                            </td>
+                            <td>
+                                考前一周<br>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                面试时间：<br>
+                            </td>
+                            <td>
+                                2019年1月5日-6日<br>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                成绩查询：<br>
+                            </td>
+                            <td>
+                                考后一个月<br>
+                            </td>
+                        </tr>
+                        </tbody>
+                    </table>
+                    <br>                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="zl_6">
+    <h3><b>专业课程</b>   专家面对面授课</h3>
+    <div class="w1200">
+        <ul class="clearfix">
+            <li class="l1">
+                <label><i class="icon"></i>*姓   名</label><input name="username" id="username">
+            </li>
+            <li class="l2">
+                <label><i class="icon"></i>*手   机</label><input name="tel" id="tel" onkeyup="this.value=this.value.replace(/\D/g,'')" onafterpaste="this.value=this.value.replace(/\D/g,'')">
+            </li>
+            <li class="l3">
+                <input type="hidden" name="field_demo_name" value="专业">
+                <label><i class="icon"></i>*专   业</label><input name="field_demo" id="field_demo">
+            </li>
+            <li class="l4">
+                <input type="hidden" name="field_demo2_name" value="参考时间">
+                <label><i class="icon"></i>*参考时间</label><input id="datepicker" name="field_demo2">
+                <input name="content" type="hidden" value="来自--权威课程 专家面对面授课">
+            </li>
+        </ul>
+        <input class="btn" type="button" value="立即报名">
+    </div>
+</div>
+<div class="zl_10">
+    <div class="w1200 clearfix">
+        <div class="fl">
+            <h3>教师招聘考试的保证   湖南教师招聘辅导优先品牌</h3>
+            <p><i class="icon"></i>强大的实力教师团队 <i class="icon i2"></i> 独特的教导方法</p>
+        </div>
+        <div class="fr">
+            <h3>0731-89829186</h3>
+            <a href="">立即咨询</a>
+        </div>
+    </div>
+</div>
+
+
+<div class="footer">
+    <div class="footer_top center">
+        <a href="javascript:;" style="cursor: default">友情链接：</a>
+        <a href="javascript:;">长沙市教育局</a>
+        <a href="javascript:;">长沙市教育局</a>
+        <a href="javascript:;">长沙市教育局</a>
+        <a href="javascript:;">长沙市教育局</a>
+        <a href="javascript:;">长沙市教育局</a>
+        <a href="javascript:;">长沙市教育局</a>
+        <a href="javascript:;">长沙市教育局</a>
+        <a href="javascript:;">长沙市教育局</a>
+        <a href="javascript:;">长沙市教育局</a>
+        <a href="javascript:;">长沙市教育局</a>
+    </div>
+    <div class="footer_content center">
+        <div class="last_content">
+            <ul>
+                <li>
+                    <div class="out_of_erweima">
+                        <img src="./images/erweima.jpg" alt="">
+                        <span>微信公众号</span>
+                    </div>
+                    <div class="out_of_erweima">
+                        <img src="./images/erweima.jpg" alt="">
+                        <span>微信客服</span>
+                    </div>
+                    <p>地铁路线：乘地铁1号线、2号线在五一广场下车1号出口出来即到。</p>
+                    <p>公交路线：乘市内公交到太平街口站或五一广场站下车往东走50米即到。</p>
+                </li>
+                <li>
+                    <p>长沙总部</p>
+                    <p>热线：0731-89829186\84720600\85185776</p>
+                    <p>手机：17773181970(杨老师)  15274894615(蔡老师)</p>
+                    <p>地址：湖南省长沙市五一广场嘉顿新天地商务楼21楼</p>
+                    <p>邮箱：</p>
+                    <p>Q Q：211754770</p>
+                    <p>网址：http://www.zhilangedu.com</p>
+                </li>
+                <li>
+                    <p>湘潭分校</p>
+                    <p>热线：18890073184(陈老师)</p>
+                    <p>报名地址：湘潭市湖南科技大学南校区俱乐部对面招待所三</p>
+                    <p>楼智浪教师</p>
+                    <br>
+                    <p>浏阳教学点</p>
+                    <p>热线：19918991015(毛老师)  17307410392(许老师)</p>
+                    <p>地址：浏阳集里龚家桥社区仿古步行街118号智浪教育•益浏</p>
+                    <p>教学点</p>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="footer_bottom">
+        <div class=" center">
+            Copyrights © 2018湖南智浪教育咨询有限公司   备案号：湘ICP备19000757号-1   营业执照查阅   技术支持：竞网智赢  网站地图   站长统计
+        </div>
+    </div>
+</div>
+
+<div>
+    <button onclick="returnTop()" id="btnTop">返回顶部</button>
+</div>
+
+
+
+<script>
+
+    var box = document.getElementById('box');
+    var small = box.children[0];
+    var big = box.children[1];
+    var mask = small.children[1];
+    var bigImage = big.children[0];
+
+    small.onmouseover = function(event){
+        big.style.display = 'block';
+        mask.style.display = 'block';
+
+    }
+    small.onmouseout = function(){
+        big.style.display = 'none';
+        mask.style.display = 'none';
+    }
+    //移动事件，注意mask的定位相对的是samll
+    small.onmousemove = function(event){
+        var event = event || window.event;//事件对象
+        // console.log(this.offsetLeft);//0,注意offsetLeft返回距离是一个带有定位的父级的左侧距离
+        var x = event.clientX-this.offsetParent.offsetLeft-mask.offsetWidth/2;//此处不能用small的offsetLeft,用box的offsetLeft
+        var y = event.clientY-this.offsetParent.offsetTop-mask.offsetHeight/2 + window.pageYOffset;
+        //限制半透明盒子出界
+        if(x < 0){
+            x = 0;
+        }else if(x > small.offsetWidth - mask.offsetWidth){
+            x = small.offsetWidth - mask.offsetWidth;
+        }
+        if( y < 0){
+            y = 0;
+        }else if( y > small.offsetHeight - mask.offsetHeight){
+            y = small.offsetHeight - mask.offsetHeight;
+        }
+        mask.style.left = x + "px";
+        mask.style.top = y +"px";
+        console.log(document.body.scrollTop);
+        console.log(-x*big.offsetWidth/small.offsetWidth);
+        bigImage.style.left = -x*big.offsetWidth/small.offsetWidth + 'px';
+        bigImage.style.top = -y*big.offsetHeight/small.offsetHeight + 'px';
+
+    }
+</script>
+</body>
+
+</html>
